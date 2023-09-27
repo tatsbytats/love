@@ -1,0 +1,65 @@
+.first {
+	position: relative;
+	top: 80px;
+
+	color: transparent;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 100px;
+	animation: fade 2s;
+}
+
+.second {
+	position: absolute;
+	top: 90px;
+	color: transparent;
+	font-family: Arial, sans-serif;
+	font-size: 90px;
+	animation: fade 4s;
+	animation-delay: 2s;
+}
+
+.third {
+	position: relative;
+	top: 40px;
+	color: transparent;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 100px;
+	animation: fade 5s;
+	animation-delay: 6s;
+}
+
+
+@keyframes fade {
+	0%{ opacity:0; 
+		color: black;
+	}
+	50%{ opacity:1;
+		color: black; 
+	}
+	100%{ opacity:0; 
+		color: transparent;
+	}
+}
+
+.fourth {
+	font-size: 80px;
+	position: absolute;
+	top: 70px;
+	font-family: Arial, sans-serif;
+	color: transparent;
+	justify-content: center;
+	animation: fade2 3s;
+	animation-delay: 10s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fade2 {
+	0%{ opacity:0; 
+		color: transparent;
+	}
+	100%{ opacity:1; 
+		color: black
+	}
+}
